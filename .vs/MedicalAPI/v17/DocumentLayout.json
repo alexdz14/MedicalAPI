@@ -1,0 +1,245 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\controllers\\consultascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\controllers\\consultascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\services\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\services\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\models\\logactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\models\\logactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\services\\citaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\services\\citaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\services\\consultaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\services\\consultaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\dtos\\editarperfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\dtos\\editarperfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\models\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\models\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|c:\\users\\stivm\\source\\repos\\medicalapi\\medicalapi\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B152BBC0-C5E0-41DD-94C5-3EAB227B229C}|MedicalAPI\\MedicalAPI.csproj|solutionrelative:medicalapi\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "MedicalAPI\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:04:17.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LogService.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Services\\LogService.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Services\\LogService.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Services\\LogService.cs",
+              "RelativeToolTip": "MedicalAPI\\Services\\LogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:02:25.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LogActividad.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Models\\LogActividad.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Models\\LogActividad.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Models\\LogActividad.cs",
+              "RelativeToolTip": "MedicalAPI\\Models\\LogActividad.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:02:08.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CitasController.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Controllers\\CitasController.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Controllers\\CitasController.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Controllers\\CitasController.cs",
+              "RelativeToolTip": "MedicalAPI\\Controllers\\CitasController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T17:59:30.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CitaService.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Services\\CitaService.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Services\\CitaService.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Services\\CitaService.cs",
+              "RelativeToolTip": "MedicalAPI\\Services\\CitaService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA1wB4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T17:57:54.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Cita.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Models\\Cita.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Models\\Cita.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Models\\Cita.cs",
+              "RelativeToolTip": "MedicalAPI\\Models\\Cita.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T17:57:26.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "MedicalAPI\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T17:00:01.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "MedicalAPI\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T16:59:05.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Program.cs",
+              "RelativeToolTip": "MedicalAPI\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAnwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T15:49:22.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConsultasController.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Controllers\\ConsultasController.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Controllers\\ConsultasController.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Controllers\\ConsultasController.cs",
+              "RelativeToolTip": "MedicalAPI\\Controllers\\ConsultasController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAYwDgAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:58:39.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Consulta.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Models\\Consulta.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Models\\Consulta.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Models\\Consulta.cs",
+              "RelativeToolTip": "MedicalAPI\\Models\\Consulta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:57:34.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "JwtHelper.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Helpers\\JwtHelper.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Helpers\\JwtHelper.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Helpers\\JwtHelper.cs",
+              "RelativeToolTip": "MedicalAPI\\Helpers\\JwtHelper.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T16:44:42.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConsultaService.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Services\\ConsultaService.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\Services\\ConsultaService.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\Services\\ConsultaService.cs",
+              "RelativeToolTip": "MedicalAPI\\Services\\ConsultaService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwB0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:57:58.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditarPerfilDto.cs",
+              "DocumentMoniker": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\DTOs\\EditarPerfilDto.cs",
+              "RelativeDocumentMoniker": "MedicalAPI\\DTOs\\EditarPerfilDto.cs",
+              "ToolTip": "C:\\Users\\stivm\\source\\repos\\MedicalAPI\\MedicalAPI\\DTOs\\EditarPerfilDto.cs",
+              "RelativeToolTip": "MedicalAPI\\DTOs\\EditarPerfilDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T01:52:12.491Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
