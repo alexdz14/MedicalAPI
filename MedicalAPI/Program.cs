@@ -41,6 +41,9 @@ builder.Services.AddSingleton<CitaService>();
 //Servicio de consulta
 builder.Services.AddSingleton<ConsultaService>();
 
+//Serviucio de paciente
+builder.Services.AddSingleton<PacienteService>();
+
 // Servicios base
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
