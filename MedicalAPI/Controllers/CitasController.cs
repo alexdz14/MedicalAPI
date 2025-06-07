@@ -42,18 +42,6 @@ namespace MedicalAPI.Controllers
             return Ok("Cita registrada correctamente.");
         }
 
-
-
-        // GET: /api/citas/medico
-        [HttpGet("medico")]
-        [Authorize(Roles = "medico")]
-        public async Task<ActionResult<List<Cita>>> GetCitasMedico()
-        {
-            var medicoId = User.FindFirstValue("id");
-            var citas = await _citaService.ObtenerPorMedicoAsync(medicoId);
-            return Ok(citas);
-        }
-
         // GET: /api/citas/paciente
         [HttpGet("paciente")]
         [Authorize(Roles = "paciente")]
@@ -108,6 +96,17 @@ namespace MedicalAPI.Controllers
 
             return Ok(resultado);
         }
+
+        // GET: /api/citas/medico
+        [HttpGet("medico")]
+        [Authorize(Roles = "medico")]
+        public async Task<ActionResult<List<CitaResumen>>> GetCitasMedico()
+        {
+            var medicoId = User.FindFirstValue("id");
+            var citas = await _citaService.ObtenerResumenPorMedicoAsync(medicoId);
+            return Ok(citas);
+        }
+
 
         // GET: /api/citas/reportes
         [HttpGet("reportes")]

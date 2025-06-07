@@ -1,4 +1,5 @@
-﻿using MedicalAPI.Models;
+﻿using MedicalAPI.DTOs;
+using MedicalAPI.Models;
 using MongoDB.Driver;
 
 namespace MedicalAPI.Services
@@ -6,10 +7,12 @@ namespace MedicalAPI.Services
     public class CitaService
     {
         private readonly IMongoCollection<Cita> _citas;
+        private readonly IMongoCollection<Paciente> _pacientes;
 
         public CitaService(MongoService mongo)
         {
             _citas = mongo.GetCollection<Cita>("citas");
+            _pacientes = mongo.GetCollection<Paciente>("pacientes");
         }
 
         public async Task CrearAsync(Cita cita) =>
@@ -35,11 +38,36 @@ namespace MedicalAPI.Services
             await _citas.UpdateOneAsync(c => c.Id == id, update);
         }
 
+        //Obtiene todas las citas
         public async Task<List<Cita>> ObtenerTodasAsync() =>
              await _citas.Find(_ => true).ToListAsync();
 
         public async Task EliminarAsync(string id) =>
             await _citas.DeleteOneAsync(c => c.Id == id);
+
+        //Obtiene un resumen de citas por médico
+        public async Task<List<CitaResumen>> ObtenerResumenPorMedicoAsync(string medicoId)
+        {
+            var citas = await _citas.Find(c => c.MedicoId == medicoId).ToListAsync();
+
+            var resumen = new List<CitaResumen>();
+
+            foreach (var cita in citas)
+            {
+                var paciente = await _pacientes.Find(p => p.Id == cita.PacienteId).FirstOrDefaultAsync();
+                string nombrePaciente = paciente != null ? paciente.Nombre : "Paciente desconocido";
+
+                resumen.Add(new CitaResumen
+                {
+                    Paciente = nombrePaciente,
+                    FechaHora = cita.FechaHora,
+                    Motivo = cita.Motivo,
+                    Estado = cita.Estado
+                });
+            }
+
+            return resumen;
+        }
 
 
         //Consultar por estado y fecha
