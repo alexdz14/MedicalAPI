@@ -89,6 +89,13 @@ namespace MedicalAPI.Controllers
             return Ok(resultado);
         }
 
+        [HttpGet("ping")]
+        [AllowAnonymous]
+        public IActionResult Ping()
+        {
+            return Ok("pong");
+        }
+
 
         [HttpGet("logs")]
         [Authorize]

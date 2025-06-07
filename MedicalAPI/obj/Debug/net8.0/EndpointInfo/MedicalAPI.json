@@ -636,6 +636,18 @@
         }
       }
     },
+    "/api/Usuarios/ping": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Usuarios/logs": {
       "get": {
         "tags": [

@@ -363,6 +363,16 @@
   },
   {
     "ContainingType": "MedicalAPI.Controllers.UsuariosController",
+    "Method": "Ping",
+    "RelativePath": "api/Usuarios/ping",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalAPI.Controllers.UsuariosController",
     "Method": "Registrar",
     "RelativePath": "api/Usuarios/registro",
     "HttpMethod": "POST",
