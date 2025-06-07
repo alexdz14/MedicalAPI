@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using System.Security.Claims;
+using MedicalAPI.DTOs;
 using MedicalAPI.Models;
 using MedicalAPI.Services;
-using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MedicalAPI.Controllers
 {
@@ -22,8 +23,17 @@ namespace MedicalAPI.Controllers
         // POST: /api/citas
         [HttpPost]
         [Authorize(Roles = "recepcionista")]
-        public async Task<IActionResult> Crear(Cita cita)
+        public async Task<IActionResult> Crear(CitaDto dto)
         {
+            var cita = new Cita
+            {
+                PacienteId = dto.PacienteId,
+                MedicoId = dto.MedicoId,
+                FechaHora = dto.FechaHora,
+                Motivo = dto.Motivo,
+                Estado = "programada"
+            };
+
             await _citaService.CrearAsync(cita);
 
             var userId = User.FindFirstValue("id");
@@ -31,6 +41,8 @@ namespace MedicalAPI.Controllers
 
             return Ok("Cita registrada correctamente.");
         }
+
+
 
         // GET: /api/citas/medico
         [HttpGet("medico")]
@@ -75,6 +87,26 @@ namespace MedicalAPI.Controllers
 
             await _citaService.CancelarAsync(id);
             return Ok("Cita cancelada.");
+        }
+
+        //Mostrar todas las citas
+        [HttpGet]
+        [Authorize]
+        public async Task<ActionResult<List<object>>> GetTodas()
+        {
+            var citas = await _citaService.ObtenerTodasAsync();
+
+            var resultado = citas.Select(c => new
+            {
+                id = c.Id,
+                paciente = c.PacienteId,
+                medico = c.MedicoId,
+                fechaHora = c.FechaHora,
+                motivo = c.Motivo,
+                estado = c.Estado
+            });
+
+            return Ok(resultado);
         }
 
         // GET: /api/citas/reportes

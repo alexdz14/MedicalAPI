@@ -35,6 +35,13 @@ namespace MedicalAPI.Services
             await _citas.UpdateOneAsync(c => c.Id == id, update);
         }
 
+        public async Task<List<Cita>> ObtenerTodasAsync() =>
+             await _citas.Find(_ => true).ToListAsync();
+
+        public async Task EliminarAsync(string id) =>
+            await _citas.DeleteOneAsync(c => c.Id == id);
+
+
         //Consultar por estado y fecha
         public async Task<List<Cita>> ReportePorEstadoYFecha(string estado, DateTime fecha) =>
         await _citas.Find(c =>
