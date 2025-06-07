@@ -337,6 +337,16 @@
   },
   {
     "ContainingType": "MedicalAPI.Controllers.UsuariosController",
+    "Method": "GetMedicos",
+    "RelativePath": "api/Usuarios/medicos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalAPI.Controllers.UsuariosController",
     "Method": "EditarPerfil",
     "RelativePath": "api/Usuarios/perfil",
     "HttpMethod": "PUT",

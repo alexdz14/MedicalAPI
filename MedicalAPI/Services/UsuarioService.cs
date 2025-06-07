@@ -27,6 +27,11 @@ namespace MedicalAPI.Services
         public async Task<Usuario?> ObtenerPorIdAsync(string id) =>
         await _usuarios.Find(u => u.Id == id).FirstOrDefaultAsync();
 
+        public async Task<List<Usuario>> ObtenerPorRolAsync(string rol)
+        {
+            return await _usuarios.Find(u => u.Rol == rol).ToListAsync();
+        }
+
         public async Task ActualizarPerfilAsync(string id, string nombre, string email, string? nuevaPassword)
         {
             var update = Builders<Usuario>.Update

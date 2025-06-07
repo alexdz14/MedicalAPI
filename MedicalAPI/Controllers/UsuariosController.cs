@@ -74,6 +74,22 @@ namespace MedicalAPI.Controllers
             return Ok("Perfil actualizado.");
         }
 
+        [HttpGet("medicos")]
+        [Authorize(Roles = "recepcionista,admin")]
+        public async Task<IActionResult> GetMedicos()
+        {
+            var medicos = await _usuarioService.ObtenerPorRolAsync("medico");
+
+            var resultado = medicos.Select(m => new
+            {
+                id = m.Id,
+                nombre = m.Nombre
+            });
+
+            return Ok(resultado);
+        }
+
+
         [HttpGet("logs")]
         [Authorize]
         public async Task<IActionResult> MisLogs([FromServices] LogService logService)
