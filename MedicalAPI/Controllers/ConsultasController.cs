@@ -66,5 +66,16 @@ namespace MedicalAPI.Controllers
             return File(Encoding.UTF8.GetBytes(csv.ToString()), "text/csv", "consultas.csv");
         }
 
+        // GET: /api/consultas/paciente
+        [HttpGet("paciente")]
+        [Authorize(Roles = "paciente")]
+        public async Task<ActionResult<List<Consulta>>> VerHistorialPaciente()
+        {
+            var pacienteId = User.FindFirstValue("id");
+            var historial = await _consultaService.HistorialPorPacienteAsync(pacienteId);
+            return Ok(historial);
+        }
+
+
     }
 }

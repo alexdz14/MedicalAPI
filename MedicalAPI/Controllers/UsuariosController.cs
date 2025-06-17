@@ -96,7 +96,6 @@ namespace MedicalAPI.Controllers
             return Ok("pong");
         }
 
-
         [HttpGet("logs")]
         [Authorize]
         public async Task<IActionResult> MisLogs([FromServices] LogService logService)
@@ -106,5 +105,25 @@ namespace MedicalAPI.Controllers
             return Ok(logs);
         }
 
+        [HttpPost("registro-paciente")]
+        [AllowAnonymous]
+        public async Task<IActionResult> RegistrarPaciente(RegistroPacienteDto dto)
+        {
+            var existe = await _usuarioService.BuscarPorEmailAsync(dto.Correo);
+            if (existe != null)
+                return BadRequest("Ya existe un usuario con ese correo.");
+
+            var nuevoUsuario = new Usuario
+            {
+                Nombre = dto.Nombre,
+                Email = dto.Correo,
+                PasswordHash = PasswordHelper.HashPassword(dto.Contrasena),
+                Rol = "paciente",
+                Activo = true
+            };
+
+            await _usuarioService.CrearAsync(nuevoUsuario);
+            return Ok("Paciente registrado con éxito.");
+        }
     }
 }

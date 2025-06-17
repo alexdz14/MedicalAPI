@@ -1,3 +1,11 @@
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.csproj.AssemblyReference.cache
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.AssemblyInfoInputs.cache
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.AssemblyInfo.cs
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.csproj.CoreCompileInputs.cache
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.sourcelink.json
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\appsettings.json
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\MedicalAPI.staticwebassets.endpoints.json
@@ -9,7 +17,9 @@ C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\MedicalAPI.pd
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\AWSSDK.Core.dll
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\DnsClient.dll
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\itextsharp.dll
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -32,14 +42,6 @@ C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\ZstdSharp.dll
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
-C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.csproj.AssemblyReference.cache
-C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.AssemblyInfoInputs.cache
-C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.AssemblyInfo.cs
-C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.csproj.CoreCompileInputs.cache
-C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.sourcelink.json
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\scopedcss\bundle\MedicalAPI.styles.css
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\staticwebassets.build.json.cache
@@ -52,5 +54,3 @@ C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\refint\Medica
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.pdb
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.genruntimeconfig.cache
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\ref\MedicalAPI.dll
-C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
-C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\itextsharp.dll

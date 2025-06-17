@@ -161,6 +161,26 @@
   },
   {
     "ContainingType": "MedicalAPI.Controllers.ConsultasController",
+    "Method": "VerHistorialPaciente",
+    "RelativePath": "api/Consultas/paciente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MedicalAPI.Models.Consulta, MedicalAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MedicalAPI.Controllers.ConsultasController",
     "Method": "VerHistorial",
     "RelativePath": "api/Consultas/paciente/{id}",
     "HttpMethod": "GET",
@@ -382,6 +402,22 @@
       {
         "Name": "dto",
         "Type": "MedicalAPI.DTOs.RegistroUsuarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalAPI.Controllers.UsuariosController",
+    "Method": "RegistrarPaciente",
+    "RelativePath": "api/Usuarios/registro-paciente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MedicalAPI.DTOs.RegistroPacienteDto",
         "IsRequired": true
       }
     ],
