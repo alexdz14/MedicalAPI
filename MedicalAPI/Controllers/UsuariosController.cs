@@ -89,6 +89,22 @@ namespace MedicalAPI.Controllers
             return Ok(resultado);
         }
 
+        [HttpGet("por-rol")]
+        [Authorize]
+        public async Task<IActionResult> GetPorRol([FromQuery] string rol)
+        { 
+            var usuarios = await _usuarioService.ObtenerPorRolAsync(rol);
+
+            var resultado = usuarios.Select(u => new
+            {
+                id = u.Id,
+                nombre = u.Nombre,
+                email = u.Email
+            });
+
+            return Ok(resultado);
+        }
+
         [HttpGet("ping")]
         [AllowAnonymous]
         public IActionResult Ping()

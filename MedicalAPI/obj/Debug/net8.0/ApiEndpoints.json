@@ -393,6 +393,22 @@
   },
   {
     "ContainingType": "MedicalAPI.Controllers.UsuariosController",
+    "Method": "GetPorRol",
+    "RelativePath": "api/Usuarios/por-rol",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rol",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicalAPI.Controllers.UsuariosController",
     "Method": "Registrar",
     "RelativePath": "api/Usuarios/registro",
     "HttpMethod": "POST",
