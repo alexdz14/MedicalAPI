@@ -52,3 +52,5 @@ C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\refint\Medica
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.pdb
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\MedicalAPI.genruntimeconfig.cache
 C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\obj\Debug\net8.0\ref\MedicalAPI.dll
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\stivm\source\repos\MedicalAPI\MedicalAPI\bin\Debug\net8.0\itextsharp.dll

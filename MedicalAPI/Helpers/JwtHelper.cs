@@ -9,7 +9,7 @@ namespace MedicalAPI.Helpers
     {
         private const string SecretKey = "SuperUltraClaveSeguraJWT1234567890"; // Clave S E C R E T A
 
-        public static string GenerateToken(string userId, string rol)
+        public static string GenerateToken(string id, string rol, string nombre)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(SecretKey);
@@ -18,8 +18,9 @@ namespace MedicalAPI.Helpers
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-                    new Claim("id", userId),
-                    new Claim(ClaimTypes.Role, rol)
+                        new Claim("id", id),
+                        new Claim(ClaimTypes.Role, rol),
+                        new Claim("name", nombre),
                 }),
                 Expires = DateTime.UtcNow.AddHours(6),
                 SigningCredentials = new SigningCredentials(

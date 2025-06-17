@@ -53,7 +53,7 @@ namespace MedicalAPI.Controllers
             if (usuario == null || !PasswordHelper.VerifyPassword(dto.Password, usuario.PasswordHash))
                 return Unauthorized("Credenciales inválidas.");
 
-            var token = JwtHelper.GenerateToken(usuario.Id, usuario.Rol);
+            var token = JwtHelper.GenerateToken(usuario.Id, usuario.Rol, usuario.Nombre);
             return Ok(new
             {
                 token,
