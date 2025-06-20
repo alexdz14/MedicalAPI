@@ -82,18 +82,7 @@ namespace MedicalAPI.Controllers
         [Authorize]
         public async Task<ActionResult<List<object>>> GetTodas()
         {
-            var citas = await _citaService.ObtenerTodasAsync();
-
-            var resultado = citas.Select(c => new
-            {
-                id = c.Id,
-                paciente = c.PacienteId,
-                medico = c.MedicoId,
-                fechaHora = c.FechaHora,
-                motivo = c.Motivo,
-                estado = c.Estado
-            });
-
+            var resultado = await _citaService.ObtenerTodasConNombresAsync();
             return Ok(resultado);
         }
 

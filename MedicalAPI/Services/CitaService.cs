@@ -1,5 +1,6 @@
 ﻿using MedicalAPI.DTOs;
 using MedicalAPI.Models;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace MedicalAPI.Services
@@ -8,11 +9,14 @@ namespace MedicalAPI.Services
     {
         private readonly IMongoCollection<Cita> _citas;
         private readonly IMongoCollection<Paciente> _pacientes;
+        private readonly IMongoCollection<Usuario> _usuarios;
 
         public CitaService(MongoService mongo)
         {
             _citas = mongo.GetCollection<Cita>("citas");
             _pacientes = mongo.GetCollection<Paciente>("pacientes");
+            _usuarios = mongo.GetCollection<Usuario>("usuarios");
+
         }
 
         public async Task CrearAsync(Cita cita) =>
@@ -49,13 +53,23 @@ namespace MedicalAPI.Services
         public async Task<List<CitaResumen>> ObtenerResumenPorMedicoAsync(string medicoId)
         {
             var citas = await _citas.Find(c => c.MedicoId == medicoId).ToListAsync();
-
             var resumen = new List<CitaResumen>();
 
             foreach (var cita in citas)
             {
                 var paciente = await _pacientes.Find(p => p.Id == cita.PacienteId).FirstOrDefaultAsync();
-                string nombrePaciente = paciente != null ? paciente.Nombre : "Paciente desconocido";
+
+                string nombrePaciente;
+
+                if (paciente != null)
+                {
+                    nombrePaciente = paciente.Nombre;
+                }
+                else
+                {
+                    var usuario = await _usuarios.Find(u => u.Id == cita.PacienteId && u.Rol == "paciente").FirstOrDefaultAsync();
+                    nombrePaciente = usuario != null ? usuario.Nombre : "Paciente desconocido";
+                }
 
                 resumen.Add(new CitaResumen
                 {
@@ -69,6 +83,52 @@ namespace MedicalAPI.Services
             return resumen;
         }
 
+
+        public async Task<List<object>> ObtenerTodasConNombresAsync()
+        {
+            var citas = await _citas.Find(_ => true).ToListAsync();
+            var resultado = new List<object>();
+
+            foreach (var cita in citas)
+            {
+                string nombrePaciente = "Paciente desconocido";
+                string nombreMedico = "Médico desconocido";
+
+                if (ObjectId.TryParse(cita.PacienteId, out _))
+                {
+                    var paciente = await _pacientes.Find(p => p.Id == cita.PacienteId).FirstOrDefaultAsync();
+                    if (paciente != null)
+                        nombrePaciente = paciente.Nombre;
+                    else
+                    {
+                        var usuario = await _usuarios.Find(u => u.Id == cita.PacienteId && u.Rol == "paciente").FirstOrDefaultAsync();
+                        if (usuario != null)
+                            nombrePaciente = usuario.Nombre;
+                    }
+                }
+
+                if (ObjectId.TryParse(cita.MedicoId, out _))
+                {
+                    var medico = await _usuarios.Find(u => u.Id == cita.MedicoId && u.Rol == "medico").FirstOrDefaultAsync();
+                    if (medico != null)
+                        nombreMedico = medico.Nombre;
+                }
+
+                resultado.Add(new
+                {
+                    id = cita.Id,
+                    pacienteId = cita.PacienteId,
+                    pacienteNombre = nombrePaciente,
+                    medicoId = cita.MedicoId,
+                    medicoNombre = nombreMedico,
+                    fechaHora = cita.FechaHora,
+                    motivo = cita.Motivo,
+                    estado = cita.Estado
+                });
+            }
+
+            return resultado;
+        }
 
         //Consultar por estado y fecha
         public async Task<List<Cita>> ReportePorEstadoYFecha(string estado, DateTime fecha) =>

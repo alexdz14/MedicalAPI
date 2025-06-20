@@ -7,7 +7,7 @@ namespace MedicalAPI.Helpers
 {
     public static class JwtHelper
     {
-        private const string SecretKey = "SuperUltraClaveSeguraJWT1234567890"; // Clave S E C R E T A
+        private const string SecretKey = "SuperUltraClaveSeguraJWT1234567890";
 
         public static string GenerateToken(string id, string rol, string nombre)
         {
